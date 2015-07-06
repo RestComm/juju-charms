@@ -1,24 +1,20 @@
+Bootstrap Juju
+#boostrap environment
+juju bootstrap
+#get logs
+juju debug-log
+# deploy juju gui
+juju deploy juju-gui
+# expose juju-gui for public access
+juju expose juju-gui
 
-
-    juju bootstrap
-    juju deploy mobicents restcomm
-    juju deploy mobicents mediaserver
-
-    juju add-relation restcomm:restcomm mediaserver:mediaserver
-
-
-# TODO
-
-- config's not getting written correctly to bind to external address...
-
-- rewrite these with helpers
-
-- use templates across the board instead of sed
-
-- move builds to config or even install
-  optional or not?
-
-- just do installs and config at relation-time so they finish faster
-
-
-
+Deploying RestComm Local Charm
+#deploy backend DB
+juju deploy mysql
+#deploy Mobicents RestComm Unit
+juju deploy -u --repository=../../ local:trusty/mobicents-restcomm
+# connect RestComm to the backend DB
+juju add-relation mobicents-restcomm mysql
+juju expose mobicents-restcomm
+# go to http://<public_ip>:8080/restcomm-management or http://<public_ip>:8080/restcomm-management (username: administrator@company.com, password: RestComm) for Admininstration
+# go to http://<public_ip>:8080/olympus for WebRTC P2P Live Video chat
