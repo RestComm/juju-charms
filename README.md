@@ -1,7 +1,7 @@
 # juju-charms
 Juju Charms for Mobicents Components
 
-# Deploying the charms 
+# Deploying/Starting Juju
 
 
     #boostrap Juju environment
@@ -13,7 +13,13 @@ Juju Charms for Mobicents Components
     #expose juju-gui for public access
     juju expose juju-gui
 
-#Deploying RestComm Local Charm
+
+There is now 2 options for deploying RestComm :
+
+#1. Automated way - All Integrated Bundle
+Import https://raw.githubusercontent.com/Mobicents/juju-charms/master/mobicents-restcomm-mysql.yaml through the Juju GUI that you just deployed previously
+
+#2. Manual way - Deploying MySQL and RestComm Charms
 
     #deploy backend DB
     juju deploy mysql
