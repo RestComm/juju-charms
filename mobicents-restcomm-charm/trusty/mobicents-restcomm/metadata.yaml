@@ -2,7 +2,7 @@ name: mobicents-restcomm
 maintainer: Jean Deruelle <jean.deruelle@telestax.com>
 summary: Mobicents RestComm
 description: Mobicents Restcomm
-categories: 
+tags: 
   - app-servers
 provides:
   website:
