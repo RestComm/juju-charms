@@ -17,7 +17,7 @@ Juju Charms for Mobicents Components
 
     #deploy backend DB
     juju deploy mysql
-    #if you use juju local (ie lxc) as environment mysql needs this below
+    #if you use juju local (ie lxc - https://jujucharms.com/docs/stable/config-local) as environment mysql needs this below
     #juju set mysql dataset-size='512M'
     #juju resolved -r mysql/#
     #deploy Mobicents RestComm Unit
