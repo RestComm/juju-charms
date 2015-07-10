@@ -1,0 +1,31 @@
+series: trusty
+services: 
+  "mobicents-restcomm": 
+    charm: "local:trusty/mobicents-restcomm-1"
+    num_units: 1
+    expose: true
+    annotations: 
+      "gui-x": "1165"
+      "gui-y": "651.2050807568877"
+    to: 
+      - "0"
+  mysql: 
+    charm: "cs:trusty/mysql-25"
+    num_units: 1
+    options: 
+      "dataset-size": 512M
+    annotations: 
+      "gui-x": "1029"
+      "gui-y": "276.7350269189626"
+    to: 
+      - "1"
+relations: 
+  - - "mobicents-restcomm:database"
+    - "mysql:db"
+machines: 
+  "0": 
+    series: trusty
+    constraints: arch=amd64
+  "1": 
+    series: trusty
+    constraints: arch=amd64
