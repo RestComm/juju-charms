@@ -13,7 +13,7 @@ Juju Charms for Mobicents Components
     juju expose juju-gui
     
 ### juju-quickstart option
-If you have juju-quickstart https://launchpad.net/juju-quickstart to deploy and connect to juju GUI use this one comment for current bootstrapped envrioment. See also: https://github.com/juju/cheatsheet
+If you have juju-quickstart https://launchpad.net/juju-quickstart to deploy and connect to juju GUI use this one command for current bootstrapped envrioment. See also: https://github.com/juju/cheatsheet
 
     juju-quickstart     
 
