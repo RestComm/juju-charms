@@ -24,7 +24,7 @@ There is now 2 options for deploying RestComm :
 ##0. Download this project
 As a temporary solution till this bundle and charms will be in charm store: jujucharms.com we are using local deployment
 
-git clone https://github.com/Mobicents/juju-charms.git
+    git clone https://github.com/Mobicents/juju-charms.git
 
 
 
