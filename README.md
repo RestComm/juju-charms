@@ -48,7 +48,11 @@ Import https://raw.githubusercontent.com/Mobicents/juju-charms/master/mobicents-
 
 Go to http://<public_ip>:8080/restcomm-management or http://<public_ip>:8080/restcomm-management (username: administrator@company.com, password: RestComm) for Admininstration
 
+## WebRTC call
+
 Go to http://<public_ip>:8080/olympus for WebRTC P2P Live Video chat
+
+Please refer to this link: http://caniuse.com/#search=webrtc  for the most up-to-date information about browser WebRTC support.
 
 ## Clean enviroment  
 When you done, you can clean ennviroment and destroy all services (do not terminate machines). 
