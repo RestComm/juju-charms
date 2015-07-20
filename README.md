@@ -21,21 +21,28 @@ If you have juju-quickstart https://launchpad.net/juju-quickstart to deploy and 
 #Deploying RestComm
 There is now 2 options for deploying RestComm :
 
-##1. Automated way - All Integrated Bundle
-Import https://raw.githubusercontent.com/Mobicents/juju-charms/master/mobicents-restcomm-mysql.yaml through the Juju GUI that you just deployed previously
+##0. Download this project
+As a temporary solution till this bundle and charms will be in charm store: jujucharms.com we are using local deployment
 
-##2. Manual way - Deploying MySQL and RestComm Charms
+git clone https://github.com/Mobicents/juju-charms.git
+
+
+
+##1. Manual way - Deploying MySQL and RestComm Charms
 
     #deploy backend DB
     juju deploy mysql
     #if you use juju local (ie lxc - https://jujucharms.com/docs/stable/config-local) as environment mysql needs this below
     #juju set mysql dataset-size='512M'
     #juju resolved -r mysql/#
-    #deploy Mobicents RestComm Unit
-    juju deploy -u --repository=../../ local:trusty/mobicents-restcomm
+    #deploy Mobicents RestComm Unit (the same folder where you issued git clone command)
+    juju deploy -u --repository=juju-charms/mobicents-restcomm-charm/ local:trusty/mobicents-restcomm 
     #connect RestComm to the backend DB
     juju add-relation mobicents-restcomm mysql
     juju expose mobicents-restcomm
+
+##1. Automated way (to be verified) - All Integrated Bundle
+Import https://raw.githubusercontent.com/Mobicents/juju-charms/master/mobicents-restcomm-mysql.yaml through the Juju GUI that you just deployed previously
 
 #Test RestComm Charm
 
