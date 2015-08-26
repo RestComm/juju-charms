@@ -46,7 +46,7 @@ Import https://raw.githubusercontent.com/Mobicents/juju-charms/master/mobicents-
 
 #Test RestComm Charm
 
-Go to http://<public_ip>:8080/restcomm-management or http://<public_ip>:8080/restcomm-management (username: administrator@company.com, password: RestComm) for Admininstration
+Go to http://<public_ip>:8080  (username: administrator@company.com, password: RestComm) for Admininstration
 
 ## WebRTC call
 
