@@ -13,7 +13,7 @@ Juju Charms for Mobicents Components
     #expose juju-gui for public access
     juju expose juju-gui
 
-#Deploying RestComm Local Charm
+#Deploying RestComm Charm
 
     #deploy backend DB
     juju deploy mysql
@@ -21,13 +21,13 @@ Juju Charms for Mobicents Components
     #juju set mysql dataset-size='512M'
     #juju resolved -r mysql/#
     #deploy Mobicents RestComm Unit
-    juju deploy -u --repository=../../ local:trusty/mobicents-restcomm
+    juju deploy cs:~jean-deruelle/trusty/mobicents-restcomm-charm
     #connect RestComm to the backend DB
     juju add-relation mobicents-restcomm mysql
     juju expose mobicents-restcomm
 
 #Test RestComm Charm
 
-Go to http://<public_ip>:8080/restcomm-management or http://<public_ip>:8080/restcomm-management (username: administrator@company.com, password: RestComm) for Admininstration
+Go to http://<public_ip>:8080 or http://<public_ip>:8080/restcomm-management (username: administrator@company.com, password: RestComm) for Admininstration
 
 Go to http://<public_ip>:8080/olympus for WebRTC P2P Live Video chat

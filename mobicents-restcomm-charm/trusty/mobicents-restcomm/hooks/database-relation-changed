@@ -15,7 +15,7 @@ password=`relation-get password`
 host=`relation-get private-address`
 database=`relation-get database`
 
-juju-log "user $user password $password host $host database $database"
+#juju-log "user $user password $password host $host database $database"
 
 juju-log "Checking to see if the DB has been created and populated"
 
