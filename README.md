@@ -46,11 +46,11 @@ Import https://raw.githubusercontent.com/Mobicents/juju-charms/master/mobicents-
 
 #Test RestComm Charm
 
-Go to http://<public_ip>:8080  (username: administrator@company.com, password: RestComm) for Admininstration
+Go to http://&lt;public_ip&gt;:8080  (username: administrator@company.com, password: RestComm) for Admininstration
 
 ## WebRTC call
 
-Go to http://<public_ip>:8080/olympus for WebRTC P2P Live Video chat
+Go to http://&lt;public_ip&gt;:8080/olympus for WebRTC P2P Live Video chat
 
 Please refer to this link: http://caniuse.com/#search=webrtc  for the most up-to-date information about browser WebRTC support.
 
