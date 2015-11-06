@@ -1,7 +1,7 @@
 series: trusty
 services: 
   "mobicents-restcomm": 
-    charm: "cs:~jean-deruelle/trusty/mobicents-restcomm-charm-0"
+    charm: "cs:~jean-deruelle/trusty/mobicents-restcomm-charm-3"
     num_units: 1
     expose: true
     annotations: 
