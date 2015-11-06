@@ -9,8 +9,8 @@ apt-get update
 apt-get install -y zip unzip ipcalc software-properties-common openjdk-7-jdk maven python-cheetah python-lxml python-requests wireshark screen mysql-client-core-5.5
 
 name=Mobicents-Restcomm-JBoss-AS7
-version=7.3.1.675
-dl="https://github.com/Mobicents/RestComm/releases/download/731ga/Mobicents-Restcomm-JBoss-AS7-7.3.1.675.zip"
+version=7.4.0.746
+dl="https://github.com/Mobicents/RestComm/releases/download/740ga/Mobicents-Restcomm-JBoss-AS7-7.4.0.746.zip"
 
 # Grab RestComm
 juju-log "Fetching $dl"
@@ -19,7 +19,6 @@ cd /opt
 wget -q --auth-no-challenge $dl
 
 # Extract to a known location
-#mv Mobicents-Restcomm-JBoss-AS7-7.3.1.675.zip $name-$version.zip
 juju-log "Extracting RestComm"
 unzip $name-$version.zip
 rm -f $name-$version.zip

@@ -8,8 +8,10 @@ juju-log  "clearwater-ellis-relation-changed"
 #[ -n "$cscf_uri" ] || exit 0
 
 #setting the Restcomm properties for the relation
-PUBLIC_HOSTNAME=`unit-get public-address`
-STATIC_ADDRESS=`dig +short @8.8.8.8 $PUBLIC_HOSTNAME`
+#PUBLIC_HOSTNAME=`unit-get public-address`
+#STATIC_ADDRESS=`dig +short @8.8.8.8 $PUBLIC_HOSTNAME`
+#fix by Nicolas Thomas https://code.launchpad.net/~thomnico/charms/trusty/mobicents-restcomm-charm/adapt-to-newjuju/+merge/273598
+STATIC_ADDRESS=`unit-get public-address`
 
 relation-set as-name=RestComm-$STATIC_ADDRESS as-uri=sip:$STATIC_ADDRESS:5080
 
