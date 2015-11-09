@@ -41,8 +41,8 @@ As a temporary solution till this bundle and charms will be in charm store: juju
     juju add-relation mobicents-restcomm mysql
     juju expose mobicents-restcomm
 
-##1. Automated way (to be verified) - All Integrated Bundle
-Import https://raw.githubusercontent.com/Mobicents/juju-charms/master/mobicents-restcomm-mysql.yaml through the Juju GUI that you just deployed previously
+##1. Automated way - All Integrated Bundle
+Import https://jujucharms.com/u/jean-deruelle/mobicents-restcomm-mysql-bundle/ through the Juju GUI that you just deployed previously
 
 #Test RestComm Charm
 
