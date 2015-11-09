@@ -21,15 +21,15 @@ If you have juju-quickstart https://launchpad.net/juju-quickstart to deploy and 
 #Deploying RestComm
 There is now 2 options for deploying RestComm :
 
-##0. Download this project
-As a temporary solution till this bundle and charms will be in charm store: jujucharms.com we are using local deployment
+##1. Automated way - All Integrated Bundle
+Import https://jujucharms.com/u/jean-deruelle/mobicents-restcomm-mysql-bundle/ through the Juju GUI that you just deployed previously
+
+##2. Manual way - Deploying MySQL and RestComm Charms
+Download this project
+For using local deployment by example
 
     git clone https://github.com/Mobicents/juju-charms.git
-
-
-
-##1. Manual way - Deploying MySQL and RestComm Charms
-
+    
     #deploy backend DB
     juju deploy mysql
     #if you use juju local (ie lxc - https://jujucharms.com/docs/stable/config-local) as environment mysql needs this below
@@ -41,8 +41,6 @@ As a temporary solution till this bundle and charms will be in charm store: juju
     juju add-relation mobicents-restcomm mysql
     juju expose mobicents-restcomm
 
-##2. Automated way - All Integrated Bundle
-Import https://jujucharms.com/u/jean-deruelle/mobicents-restcomm-mysql-bundle/ through the Juju GUI that you just deployed previously
 
 #Test RestComm Charm
 
