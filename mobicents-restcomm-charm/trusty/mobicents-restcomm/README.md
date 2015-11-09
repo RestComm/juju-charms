@@ -31,6 +31,6 @@ Import https://jujucharms.com/u/jean-deruelle/mobicents-restcomm-charm/ and http
 
 #Test RestComm Charm
 
-Go to http://<public_ip>:8080 or http://<public_ip>:8080/restcomm-management (username: administrator@company.com, password: RestComm) for Admininstration
+Go to http://public_ip:8080 or http://<public_ip>:8080/restcomm-management (username: administrator@company.com, password: RestComm) for Admininstration
 
-Go to http://<public_ip>:8080/olympus for WebRTC P2P Live Video chat
+Go to http://public_ip:8080/olympus for WebRTC P2P Live Video chat
