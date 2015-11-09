@@ -1,10 +1,6 @@
 # juju-charms
 Juju Charms for Mobicents Components
 
-##2. Automated way - Juju Charm Store
-Import https://jujucharms.com/u/jean-deruelle/mobicents-restcomm-charm/ and https://jujucharms.com/mysql/ through the Juju GUI that you just deployed previously. Then Create a Connection between them and expose RestComm to the public.
-
-##2. Manual way - Deploying MySQL and RestComm Charms
 # Deploying the charms 
 
 
@@ -18,7 +14,10 @@ Import https://jujucharms.com/u/jean-deruelle/mobicents-restcomm-charm/ and http
     juju expose juju-gui
 
 #Deploying RestComm Charm
+##1. Automated way - Juju Charm Store
+Import https://jujucharms.com/u/jean-deruelle/mobicents-restcomm-charm/ and https://jujucharms.com/mysql/ through the Juju GUI that you just deployed previously. Then Create a Connection between them and expose RestComm to the public.
 
+##2. Manual way - Deploying MySQL and RestComm Charms
     #deploy backend DB
     juju deploy mysql
     #if you use juju local (ie lxc - https://jujucharms.com/docs/stable/config-local) as environment mysql needs this below
