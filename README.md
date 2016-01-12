@@ -1,4 +1,4 @@
-Juju Charms for Mobicents Components
+Juju Charms for RestComm Components
 
 # Deploying/Starting Juju
 
@@ -28,14 +28,14 @@ Import https://jujucharms.com/u/jean-deruelle/mobicents-restcomm-mysql-bundle/ t
 Download this project
 For using local deployment by example
 
-    git clone https://github.com/Mobicents/juju-charms.git
+    git clone https://github.com/RestComm/juju-charms.git
     
     #deploy backend DB
     juju deploy mysql
     #if you use juju local (ie lxc - https://jujucharms.com/docs/stable/config-local) as environment mysql needs this below
     #juju set mysql dataset-size='512M'
     #juju resolved -r mysql/#
-    #deploy Mobicents RestComm Unit (the same folder where you issued git clone command)
+    #deploy RestComm Unit (the same folder where you issued git clone command)
     juju deploy -u --repository=juju-charms/mobicents-restcomm-charm/ local:trusty/mobicents-restcomm 
     #connect RestComm to the backend DB
     juju add-relation mobicents-restcomm mysql
